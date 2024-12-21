@@ -19,6 +19,7 @@ export class AgencyController {
         return this.AgencyService.login(data, res);
     }
 
+
     @Post("/editAgencyProfile")
     editAgencyProfile(@Body() data, @Req() req, @Res() res) {
         return this.AgencyService.editAgencyProfile(data, req, res);
@@ -63,6 +64,11 @@ export class AgencyController {
     ShowBlog(@Req() req, @Res() res) {
         return this.AgencyService.showBlog(req, res);
     }
+
+    // @Get("/ShowBlog")
+    // ShowBlog(@Req() req, @Res() res) {
+    //     return this.AgencyService.showBlog(req, res);
+    // }
 
 
 
